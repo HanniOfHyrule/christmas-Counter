@@ -22,7 +22,7 @@
 }
 
 .countdown article {
-  margin: 10px;
+  margin: 1rem;
   overflow-y: hidden;
 }
 
@@ -48,7 +48,7 @@
 
 .countdown h3 {
   font-size: 30px;
-  margin: 30px;
+  padding-top: 0.9rem;
   color: red;
   text-shadow: 0 0 1px white, 0 0 2px whitesmoke;
 }

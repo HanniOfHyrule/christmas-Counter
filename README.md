@@ -6,4 +6,4 @@ I built a Christmas Countdown with React and Typescript. The Countdown is runnin
 
 ## You can watch this here
 
-https://tender-boyd-c67679.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2d048b06-be2c-466a-882c-1fcadecbbd15/deploy-status)](https://app.netlify.com/sites/tender-boyd-c67679/deploys)
