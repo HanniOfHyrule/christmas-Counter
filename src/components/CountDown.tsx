@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./countdown.css";
-
-// import backgrounImage from "../img/annie-spratt-QKo-op_gR9I-unsplash.jpg";
+import backgroundImage from "../img/annie-spratt-QKo-op_gR9I-unsplash.png";
 
 const CountDown = () => {
   const [days, setDays] = useState<string | number>("H");
@@ -10,7 +9,11 @@ const CountDown = () => {
   const [seconds, setSeconds] = useState<string | number>("O");
 
   const coutner = () => {
-    const endDate = new Date("December 24, 2022 17:00:00").getTime();
+    const getCurrentYear = new Date().getFullYear();
+    console.log(getCurrentYear);
+    const endDate = new Date(
+      `December 24, ${getCurrentYear} 17:00:00`
+    ).getTime();
     const today = new Date().getTime();
 
     const remainingTime = endDate - today;
@@ -35,9 +38,9 @@ const CountDown = () => {
       {" "}
       <div
         className="image"
-        // style={{ backgroundImage: `url("${backgroundImage}")` }}
+        style={{ backgroundImage: `url("${backgroundImage}")` }}
       >
-        Weihnachten Foto erstellt von freepik-de.freepik.com
+        {" "}
         <style></style>
         <div></div>
         <section className="container">
@@ -45,11 +48,11 @@ const CountDown = () => {
           <div className="countdown">
             <article>
               <p>{days}</p>
-              <h3>Days</h3>
+              <h3>days</h3>
             </article>
             <article>
               <p>{hours}</p>
-              <h3>Hours</h3>
+              <h3>hours</h3>
             </article>
             <article>
               <p>{minutes}</p>
@@ -60,6 +63,12 @@ const CountDown = () => {
               <h3>sec</h3>
             </article>
           </div>
+          <label className="calender">
+            Coming soon, add your own advent calender
+          </label>
+          <button className="calender_button">
+            customize your advent Calendar
+          </button>
         </section>
       </div>
     </React.Fragment>
