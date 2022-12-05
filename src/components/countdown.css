@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 0 20px;
+  padding: 0 1rem;
   background-color: transparent;
   width: 100vw;
   height: 100vh;
@@ -28,12 +28,12 @@
 
 .countdown p {
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 0.2rem;
   color: whitesmoke;
   text-shadow: 0 0 2px white, 0 0 2px green;
   background-color: rgb(29, 97, 12);
-  font-size: 30px;
-  width: 100px;
+  font-size: x-large;
+  width: 6rem;
   box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.5);
   font-family: "dancing script";
 }
@@ -41,13 +41,13 @@
 .container h1 {
   text-shadow: 0 0 4px white, 0 0 4px grey;
   color: rgb(221, 20, 20);
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
   text-align: center;
-  font-size: 60px;
+  font-size: 3rem;
 }
 
 .countdown h3 {
-  font-size: 30px;
+  font-size: 1.4rem;
   padding-top: 0.9rem;
   color: red;
   text-shadow: 0 0 1px white, 0 0 2px whitesmoke;
@@ -57,7 +57,9 @@ label {
   font-size: xx-large;
   padding: 1rem;
   letter-spacing: 0.2rem;
-  text-shadow: 0 0 1rem white, 0 0 1rem whitesmoke;
+  text-shadow: 2px 2px 2px white;
+  font-weight: bold;
+  text-align: center;
 }
 
 button {
@@ -69,4 +71,26 @@ button {
   border: none;
   color: white;
   font-family: "dancing script";
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    margin-top: -1rem;
+  }
+  .countdown {
+    max-width: 100vw;
+    font-size: 1rem;
+  }
+  .countdown p {
+    font-size: 1rem;
+    width: 2.8rem;
+    padding: 0.5rem;
+  }
+  h3 {
+    font-weight: 100;
+    font-size: 1.2rem !important;
+  }
+  label {
+    font-size: 1rem;
+  }
 }

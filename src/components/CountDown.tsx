@@ -10,7 +10,7 @@ const CountDown = () => {
 
   const coutner = () => {
     const getCurrentYear = new Date().getFullYear();
-    console.log(getCurrentYear);
+
     const endDate = new Date(
       `December 24, ${getCurrentYear} 17:00:00`
     ).getTime();
