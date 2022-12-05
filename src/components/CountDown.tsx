@@ -47,20 +47,20 @@ const CountDown = () => {
           <h1>Christmas Countdown</h1>
           <div className="countdown">
             <article>
-              <p>{days}</p>
-              <h3>days</h3>
+              <p className="count_time">{days}</p>
+              <p className="date">days</p>
             </article>
             <article>
-              <p>{hours}</p>
-              <h3>hours</h3>
+              <p className="count_time">{hours}</p>
+              <p className="date">hours</p>
             </article>
             <article>
-              <p>{minutes}</p>
-              <h3>min</h3>
+              <p className="count_time">{minutes}</p>
+              <p className="date">min</p>
             </article>
             <article>
-              <p>{seconds}</p>
-              <h3>sec</h3>
+              <p className="count_time">{seconds}</p>
+              <p className="date">sec</p>
             </article>
           </div>
           <label className="calender">
