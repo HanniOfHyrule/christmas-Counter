@@ -37,6 +37,9 @@
   box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.5);
   font-family: "dancing script";
 }
+.count_time:hover {
+  background-color: red;
+}
 
 .container h1 {
   text-shadow: 0 0 4px white, 0 0 4px grey;
@@ -64,6 +67,7 @@
 }
 
 .calender_button {
+  position: relative;
   padding: 0.8rem;
   font-size: medium;
   background-color: rgb(29, 97, 12);
@@ -72,6 +76,10 @@
   border: none;
   color: white;
   font-family: "dancing script";
+  cursor: pointer;
+}
+.calender_button:hover {
+  background-color: red;
 }
 
 @media screen and (max-width: 720px) {
@@ -93,10 +101,9 @@
   }
   .date {
     font-weight: normal;
-    font-size: 1.2rem !important;
   }
   .calender {
-    font-size: 1rem;
+    font-size: 1.4rem;
     padding: 2rem;
   }
 }
