@@ -53,16 +53,17 @@
   text-shadow: 0 0 1px white, 0 0 2px whitesmoke;
 }
 
-label {
+.calender {
   font-size: xx-large;
-  padding: 1rem;
+  padding: 3rem;
   letter-spacing: 0.2rem;
-  text-shadow: 2px 2px 2px white;
+  text-shadow: rgb(224, 26, 26) 10px 10px 10px, rgb(214, 16, 16) 2px 2px 2px;
   font-weight: bold;
   text-align: center;
+  color: white;
 }
 
-button {
+.calender_button {
   padding: 0.8rem;
   font-size: medium;
   background-color: rgb(29, 97, 12);
@@ -94,7 +95,8 @@ button {
     font-weight: normal;
     font-size: 1.2rem !important;
   }
-  label {
+  .calender {
     font-size: 1rem;
+    padding: 2rem;
   }
 }
