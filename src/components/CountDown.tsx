@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./countdown.css";
 import backgroundImage from "../img/annie-spratt-QKo-op_gR9I-unsplash.png";
 
@@ -29,9 +29,7 @@ const CountDown = () => {
     setDays(days);
   };
 
-  useEffect(() => {
-    setInterval(coutner, 1000);
-  });
+  setInterval(coutner, 1000);
 
   return (
     <React.Fragment>
