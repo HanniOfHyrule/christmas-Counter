@@ -62,15 +62,15 @@ const CountDown = () => {
             </article>
           </div>
           <label className="calender">
-            Coming soon, add your own advent calender
+            Coming soon, add your own advent calender!
           </label>
           <button
             className="calender_button"
             onClick={(event: any) => {
-              alert("Sorry this site are still in construction!");
+              alert("Sorry this site are still under construction!");
             }}
           >
-            customize your advent Calendar
+            customize your advent calendar
           </button>
         </section>
       </div>
