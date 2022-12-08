@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./countdown.css";
-import backgroundImage from "../img/annie-spratt-QKo-op_gR9I-unsplash.png";
+import backgroundImage from "../assets/img/annie-spratt-QKo-op_gR9I-unsplash.png";
 
 const CountDown = () => {
   const [days, setDays] = useState<string | number>("H");
@@ -30,8 +30,6 @@ const CountDown = () => {
   };
 
   setInterval(coutner, 1000);
-
-  const signIn = (props:any) => { return alert("Sorry the site is still under construction!")}
 
   return (
     <React.Fragment>
@@ -66,7 +64,12 @@ const CountDown = () => {
           <label className="calender">
             Coming soon, add your own advent calender
           </label>
-          <button className="calender_button" onClick={signIn}>
+          <button
+            className="calender_button"
+            onClick={(event: any) => {
+              alert("Sorry this site are still in construction!");
+            }}
+          >
             customize your advent Calendar
           </button>
         </section>
