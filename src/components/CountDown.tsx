@@ -31,6 +31,8 @@ const CountDown = () => {
 
   setInterval(coutner, 1000);
 
+  const signIn = (props:any) => { return alert("Sorry the site is still under construction!")}
+
   return (
     <React.Fragment>
       {" "}
@@ -64,7 +66,7 @@ const CountDown = () => {
           <label className="calender">
             Coming soon, add your own advent calender
           </label>
-          <button className="calender_button">
+          <button className="calender_button" onClick={signIn}>
             customize your advent Calendar
           </button>
         </section>
