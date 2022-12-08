@@ -5,6 +5,20 @@
   background-color: transparent;
   position: initial;
 }
-body {
+
+@font-face {
   font-family: "dancing script";
+  src: local("DancingScript") url("./assets/fonts/DancingScript-Regular.eot");
+  src: url("./assets/fonts/DancingScript-Regular.woff")
+    url("./assets/fonts/DancingScript-Regular.ttf") format("truetype")
+    url("./assets/fonts/DancingScript-Regular.eot?#iefix")
+    format("embedded-opentype") url("./assets/fonts/DancingScript-Regular.svg")
+    format("svg") url("./assets/fonts/DancingScript-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: dancing script;
 }
