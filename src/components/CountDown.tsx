@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./countdown.css";
-import backgroundImage from "../img/annie-spratt-QKo-op_gR9I-unsplash.png";
+import backgroundImage from "../assets/img/annie-spratt-QKo-op_gR9I-unsplash.png";
 
 const CountDown = () => {
   const [days, setDays] = useState<string | number>("H");
