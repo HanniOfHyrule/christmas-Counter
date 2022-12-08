@@ -31,10 +31,6 @@ const CountDown = () => {
 
   setInterval(coutner, 1000);
 
-  const signIn = (props: any) => {
-    return alert("Sorry the site is still under construction!");
-  };
-
   return (
     <React.Fragment>
       {" "}
