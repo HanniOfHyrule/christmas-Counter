@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Countdown.css";
 import backgroundImage from "../assets/img/annie-spratt-QKo-op_gR9I-unsplash.png";
-import { Outlet, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import ChristmasAnimation from "./ChristmasAnimation";
 
 const CountDown = () => {
   const [days, setDays] = useState<string | number>("H");
@@ -36,41 +37,47 @@ const CountDown = () => {
 
   return (
     <React.Fragment>
-      {" "}
-      {/* <div
-        className="image"
-        style={{ backgroundImage: `url("${backgroundImage}")` }}
-      > */}{" "}
-      <style></style>
-      <div></div>
-      <section className="container">
-        <h1>Christmas Countdown</h1>
-        <div className="countdown">
-          <article>
-            <p className="count_time">{days}</p>
-            <p className="date">days</p>
-          </article>
-          <article>
-            <p className="count_time">{hours}</p>
-            <p className="date">hours</p>
-          </article>
-          <article>
-            <p className="count_time">{minutes}</p>
-            <p className="date">min</p>
-          </article>
-          <article>
-            <p className="count_time">{seconds}</p>
-            <p className="date">sec</p>
-          </article>
+      {new Date("2022-12-24, 17:00:00") > new Date() ? (
+        <div
+          className="image"
+          style={{ backgroundImage: `url("${backgroundImage}")` }}
+        >
+          <style></style>
+          <div></div>
+          <section className="container">
+            <h1>Christmas Countdown</h1>
+            <div className="countdown">
+              <article>
+                <p className="count_time">{days}</p>
+                <p className="date">days</p>
+              </article>
+              <article>
+                <p className="count_time">{hours}</p>
+                <p className="date">hours</p>
+              </article>
+              <article>
+                <p className="count_time">{minutes}</p>
+                <p className="date">min</p>
+              </article>
+              <article>
+                <p className="count_time">{seconds}</p>
+                <p className="date">sec</p>
+              </article>
+            </div>
+            <label className="calender">
+              Coming soon, add your own advent calender!
+            </label>
+            <button
+              className="calender_button"
+              onClick={() => navigate("/calender")}
+            >
+              customize your advent calendar
+            </button>
+          </section>
         </div>
-        <label className="calender">
-          Coming soon, add your own advent calender!
-        </label>
-        <button className="calender_button" onClick={() => navigate("Login")}>
-          customize your advent calendar
-        </button>
-      </section>
-      {/* </div> */}
+      ) : (
+        <ChristmasAnimation />
+      )}
     </React.Fragment>
   );
 };

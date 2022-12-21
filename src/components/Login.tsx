@@ -1,13 +1,13 @@
 import { Provider } from "@supabase/supabase-js";
 import { supabase } from "../supabaseClient";
 import "./Login.css";
-import { Outlet } from "react-router-dom";
 import backgroundImage from "../assets/img/annie-spratt-QKo-op_gR9I-unsplash.png";
 
 const Login = () => {
   const signIn = async (provider: Provider) => {
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider,
+      options: { redirectTo: window.location.href },
     });
   };
 

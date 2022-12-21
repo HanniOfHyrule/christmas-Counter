@@ -4,9 +4,8 @@ import CountDown from "./components/CountDown";
 import { User } from "@supabase/supabase-js";
 import { supabase } from "./supabaseClient";
 import Login from "./components/Login";
-import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Calender from "./components/Calender";
-import Main from "./components/Main";
 
 function App() {
   const [user, setUser] = useState<undefined | User>();
@@ -20,28 +19,16 @@ function App() {
   const router = createHashRouter([
     {
       path: "/",
-      element: <Main />,
-      children: [
-        {
-          path: "/countdown",
-          element: <CountDown />,
-        }, 
-      ],
-      {
-          path: "/login",
-          element: <Login />,
-        },
-
-        {
-          index: true,
-          element: user ? <Calender /> : <Login />,
-        },
+      element: <CountDown />,
+    },
+    {
+      path: "/calender",
+      element: user ? <Calender /> : <Login />,
     },
   ]);
   return (
     <React.Fragment>
       <RouterProvider router={router} />
-      <Outlet />
     </React.Fragment>
   );
 }
