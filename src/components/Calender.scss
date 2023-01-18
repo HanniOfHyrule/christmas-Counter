@@ -1,0 +1,27 @@
+.calender_container {
+  background-image: url("../assets/img/jukan-tateisi-bJhT_8nbUA0-unsplash.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  p {
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+  }
+  .month,
+  .advent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
