@@ -18,9 +18,7 @@ const Login = () => {
         style={{ backgroundImage: `url("${backgroundImage}")` }}
       >
         <div className="container_login">
-          <h1 className="login_text">
-            Welcome to your custom advent calender!
-          </h1>
+          <h1 className="login_text">Welcome to your custom calender!</h1>
           <h2 className="login_text">Sign in with:</h2>
           <button onClick={() => signIn("github")}>GitHub</button>
           <button onClick={() => signIn("google")}>Google</button>

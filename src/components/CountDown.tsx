@@ -37,7 +37,10 @@ const CountDown = () => {
 
   return (
     <React.Fragment>
-      {new Date("2022-12-24, 17:00:00") > new Date() ? (
+      {new Date("2023-12-24, 17:00:00") > new Date() &&
+      new Date("2023-12-27") < new Date() ? (
+        <ChristmasAnimation />
+      ) : (
         <div
           className="image"
           style={{ backgroundImage: `url("${backgroundImage}")` }}
@@ -75,8 +78,6 @@ const CountDown = () => {
             </button>
           </section>
         </div>
-      ) : (
-        <ChristmasAnimation />
       )}
     </React.Fragment>
   );
