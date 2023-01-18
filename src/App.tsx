@@ -6,6 +6,7 @@ import { supabase } from "./supabaseClient";
 import Login from "./components/Login";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import Calender from "./components/Calender";
+import ChristmasAnimation from "./components/ChristmasAnimation";
 
 function App() {
   const [user, setUser] = useState<undefined | User>();
@@ -20,6 +21,16 @@ function App() {
     {
       path: "/",
       element: <CountDown />,
+    },
+    {
+      path: "/animation",
+      element:
+        new Date("2023-12-24, 17:00:00") > new Date() &&
+        new Date("2023-12-27") < new Date() ? (
+          <ChristmasAnimation />
+        ) : (
+          <CountDown />
+        ),
     },
     {
       path: "/calender",
