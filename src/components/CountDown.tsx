@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Countdown.css";
+import "./Countdown.scss";
 import backgroundImage from "../assets/img/annie-spratt-QKo-op_gR9I-unsplash.png";
 import { useNavigate } from "react-router-dom";
 
@@ -40,7 +40,6 @@ const CountDown = () => {
         className="image"
         style={{ backgroundImage: `url("${backgroundImage}")` }}
       >
-        <style></style>
         <div></div>
         <section className="container">
           <h1>Christmas Countdown</h1>
@@ -62,16 +61,18 @@ const CountDown = () => {
               <p className="date">sec</p>
             </article>
           </div>
+        </section>
+        <div>
           <label className="calender">
             Coming soon, add your own advent calender!
           </label>
           <button
             className="calender_button"
-            onClick={() => navigate("/calender")}
+            onClick={() => navigate("/calender/*")}
           >
             customize your advent calendar
           </button>
-        </section>
+        </div>
       </div>
     </React.Fragment>
   );

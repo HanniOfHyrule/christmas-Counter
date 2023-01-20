@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./App.scss";
 import CountDown from "./components/CountDown";
 import { User } from "@supabase/supabase-js";
 import { supabase } from "./supabaseClient";
@@ -35,6 +35,11 @@ function App() {
     {
       path: "/calender",
       element: user ? <Calender /> : <Login />,
+      children: [
+        {
+          path: "/calender/*",
+        },
+      ],
     },
   ]);
   return (

@@ -1,6 +1,6 @@
 import { Provider } from "@supabase/supabase-js";
 import { supabase } from "../supabaseClient";
-import "./Login.css";
+import "./Login.scss";
 import backgroundImage from "../assets/img/annie-spratt-QKo-op_gR9I-unsplash.png";
 
 const Login = () => {
