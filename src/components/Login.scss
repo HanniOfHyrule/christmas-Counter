@@ -1,0 +1,16 @@
+.container_login {
+  text-align: center;
+  button {
+    margin: 1rem;
+    padding: 1rem 3rem;
+    color: white;
+    background-color: rgb(35, 35, 35);
+    border-radius: 2rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+  }
+  .login_text {
+    text-shadow: 0 0 5px red;
+    margin: 1rem;
+  }
+}
