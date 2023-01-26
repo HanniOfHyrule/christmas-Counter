@@ -1,6 +1,5 @@
 import "./Calender.scss";
-import { Link, Routes } from "react-router-dom";
-import ChallengeCalender from "./ChallengeCalender";
+import { Link } from "react-router-dom";
 
 const Calender = () => {
   return (
@@ -24,13 +23,13 @@ const Calender = () => {
           </div>
           <div className="month">
             <button>
-              <Link to="/31">31 Days</Link>
+              <Link to={`/calender/challengeCalender/31`}>31 Days</Link>
             </button>
             <button>
-              <Link to="/30">30 Days</Link>
+              <Link to={`/calender/challengeCalender/30`}>30 Days</Link>
             </button>
             <button>
-              <Link to="/28">28 Days</Link>
+              <Link to={`/calender/challengeCalender/28`}>28 Days</Link>
             </button>
           </div>
         </div>
@@ -38,12 +37,11 @@ const Calender = () => {
           <h4>Advent Calender</h4>
           <div className="advent">
             <button>
-              <Link to="/24">24 Days</Link>
+              <Link to="/calender/adventCalender/24">24 Days</Link>
             </button>
           </div>
         </div>
       </div>
-      <Routes></Routes>
     </div>
   );
 };
