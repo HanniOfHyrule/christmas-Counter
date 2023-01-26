@@ -1,8 +1,16 @@
+import "./ChallengeCalender.scss";
 import { Params, useParams } from "react-router-dom";
 
 const ChallengeCalender = () => {
-  let { id } = useParams();
-  return <div></div>;
+  console.log(useParams());
+
+  return (
+    <div className="challenge_calender_wrapper">
+      <div>
+        <div></div>
+      </div>
+    </div>
+  );
 };
 
 export default ChallengeCalender;
