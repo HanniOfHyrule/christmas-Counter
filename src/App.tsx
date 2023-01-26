@@ -7,6 +7,7 @@ import Login from "./components/Login";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import Calender from "./components/Calender";
 import ChristmasAnimation from "./components/ChristmasAnimation";
+import ChallengeCalender from "./components/ChallengeCalender";
 
 function App() {
   const [user, setUser] = useState<undefined | User>();
@@ -35,11 +36,10 @@ function App() {
     {
       path: "/calender",
       element: user ? <Calender /> : <Login />,
-      children: [
-        {
-          path: "/calender/*",
-        },
-      ],
+    },
+    {
+      path: "/calender/challengeCalender/:days",
+      element: <ChallengeCalender />,
     },
   ]);
   return (
