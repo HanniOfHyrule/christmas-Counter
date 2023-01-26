@@ -68,7 +68,7 @@ const CountDown = () => {
           </label>
           <button
             className="calender_button"
-            onClick={() => navigate("/calender/*")}
+            onClick={() => navigate("/calender")}
           >
             customize your advent calendar
           </button>
